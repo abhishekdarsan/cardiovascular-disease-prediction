@@ -1,35 +1,74 @@
-# Cardiovascular Disease Prediction 
+# Heart Failure Prediction using Logistic Regression
 
-This project predicts the risk of death from heart failure using real clinical records and a logistic regression model. The dataset is from a real-world heart failure study.
+This machine learning project predicts the risk of death due to heart failure using clinical patient data and logistic regression.
 
-# 📊 Dataset
-- [Heart Failure Clinical Records Dataset](https://archive.ics.uci.edu/ml/datasets/Heart+failure+clinical+records)
-- 299 records
-- 13 features including age, ejection fraction, serum creatinine, etc.
 
-#  Model Used
-- Logistic Regression (Scikit-learn)
-- StandardScaler for normalization
-- Confusion matrix, classification report, and accuracy score for evaluation
+# Problem Statement
 
-# Key Steps
-- Data preprocessing (missing check, scaling)
-- Train-test split
-- Model training and prediction
-- Performance evaluation
-- Feature importance visualization
-- Confusion matrix heatmap
+Early prediction of heart failure risk can save lives. Using patient health metrics (like ejection fraction, creatinine, serum sodium), this model predicts the probability of death based on historical records.
+
+
+# Dataset
+
+- Source: [UCI Heart Failure Clinical Records](https://archive.ics.uci.edu/ml/datasets/Heart+failure+clinical+records)
+- Records: 299 patients
+- Target: DEATH_EVENT (0 = survived, 1 = died)
+- Features: 13 health indicators like age, blood pressure, ejection fraction, time, creatinine level, etc.
+
+
+# Data Cleaning & Preprocessing
+
+- No missing values
+- All features are numerical
+- Applied `StandardScaler` to normalize the features
+- Performed `train_test_split` (80% train, 20% test)
+
+
+# Model
+
+- Algorithm: Logistic Regression (Binary Classification)
+- Framework: Scikit-learn
+- Evaluation Metrics:
+  - Accuracy Score
+  - Confusion Matrix
+  - Classification Report (Precision, Recall, F1)
+  - Feature Importance
+
 
 # Results
-- Accuracy: ~75–85% (varies by run)
-- Precision, Recall, F1-score: Detailed in classification report
-- Most important features: Ejection fraction, serum creatinine, time
 
-#  Visualizations
-- Feature importance plot
-- Confusion matrix heatmap
+| Metric     | Value       |
+|------------|-------------|
+| Accuracy   | ~75–85%     |
+| Precision  | Shown in report |
+| Important Features | Ejection Fraction, Serum Creatinine, Time |
 
 
-Author: Abhishek Darsan H  
+##  Visualization
+
+- ✅ Feature importance bar chart
+- ✅ Confusion matrix heatmap
+
+
+##Tools & Libraries
+
+- Python
+- Pandas, NumPy
+- Scikit-learn
+- Matplotlib, Seaborn
+
+
+# Author
+
+Abhishek Darsan H  
+AI & Data Science Learner | Python & ML Enthusiast  
 [LinkedIn](https://www.linkedin.com/in/abhishek-darsan-h-551399274)
+
+# Future Work
+
+- Try Random Forest, XGBoost for better performance
+- Add patient-level interpretability (e.g., SHAP values)
+- Build a Streamlit app for doctors to input values and predict risk
+
+
 
