@@ -44,13 +44,13 @@ Early prediction of heart failure risk can save lives. Using patient health metr
 | Important Features | Ejection Fraction, Serum Creatinine, Time |
 
 
-##  Visualization
+#  Visualization
 
 - ✅ Feature importance bar chart
 - ✅ Confusion matrix heatmap
 
 
-##Tools & Libraries
+#Tools & Libraries
 
 - Python
 - Pandas, NumPy
