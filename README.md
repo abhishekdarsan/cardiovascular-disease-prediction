@@ -21,9 +21,9 @@ This project predicts the risk of death from heart failure using real clinical r
 - Confusion matrix heatmap
 
 # Results
-- Accuracy**: ~75–85% (varies by run)
-- Precision, Recall, F1-score**: Detailed in classification report
-- Most important features**: Ejection fraction, serum creatinine, time
+- Accuracy: ~75–85% (varies by run)
+- Precision, Recall, F1-score: Detailed in classification report
+- Most important features: Ejection fraction, serum creatinine, time
 
 #  Visualizations
 - Feature importance plot
